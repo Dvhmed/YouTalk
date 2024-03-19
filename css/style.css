@@ -478,6 +478,8 @@ form {
 }
 
 
+
+
 /* Ipad pro */
 @media (max-width: 1024px) {
   .container {
@@ -751,3 +753,4 @@ form {
     padding-left: 50px;
   }
 }
+

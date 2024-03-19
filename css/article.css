@@ -12,7 +12,7 @@
 .author-date-filter {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    column-gap: 20px;
     font-size: 14px;
 
 }
@@ -289,6 +289,23 @@ article li::marker {
     gap: 16px;
 }
 
+.article-filter__list__bottom {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    color: #2963a3;
+  }
+  
+  ul.article-filter__list__bottom li::marker {
+    color: #2963a3;
+  
+  }
+  
+  .article-filter__list__bottom li:nth-child(5) {
+    list-style: none;
+  }
+
 .article-aside1 {
     padding: 24px;
     background-color: #E6F0FD;
@@ -481,6 +498,21 @@ strong.psycho-profession {
 
 
 @media (max-width: 1920px) {
+    .main-article {
+        position: relative;
+    }
+
+    .problem-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* gap: 302px; */
+        padding-top: 72px;
+        padding-bottom: 108px;
+        position: relative;
+        justify-content: space-between;
+        border-top: 1px solid #E6E6E6;
+    }
 
     article {
         display: grid;
@@ -489,8 +521,55 @@ strong.psycho-profession {
         column-gap: 228px;
         grid-template-areas: 
             "article aside";
+        padding-bottom: 48px;
+        position: relative;
         
         
+    }
+
+    .spot1 {
+        position: absolute;
+        right: 0;
+        top: 2304px;
+        
+    }
+
+    .spot2 {
+        position: absolute;
+        right: 0;
+        bottom: 116px;
+    }
+
+    .bottom-background {
+        position: absolute;
+        bottom: 0;
+        left: 35px; 
+        
+    }
+
+    .problem-block {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        max-width: 349px;
+        
+    }
+
+    .problem {
+        font-size: 48px;
+        font-weight: 700;
+        
+    }
+
+    .problem__text {
+        font-size: 18px;
+        font-weight: 400;
+        
+    }
+
+    .button__psycho  {
+        max-width: 238px;
+        height: 60px;
     }
 
     .article-section {
@@ -648,6 +727,26 @@ strong.psycho-profession {
         display: none;
     }
 
+    .article-filter__list__bottom {
+        display: none;
+    }
+
+    .spot1 {
+        display: none;
+    }
+
+    .spot2 {
+        display: none;
+    }
+
+    .problem-section    {
+        display: none;
+    }
+
+    .bottom-background {
+        display: none;
+    }
+
     article {
         display: grid;
         grid-template-columns: 1fr 222px;
@@ -655,6 +754,8 @@ strong.psycho-profession {
         column-gap: 24px;
         grid-template-areas: 
             "article aside";
+        margin-bottom: 71px;
+        
         
     }
 
@@ -670,6 +771,7 @@ strong.psycho-profession {
 
     article {
         display: flex;
+        margin-bottom: 59px;
     }
 
 
